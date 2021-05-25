@@ -1,6 +1,6 @@
 # yahoo_oauth_fantasy
 
-Yahoo_OAuth is a very easy to use OAuth library for Yahoo! APIs. (Based on https://github.com/josuebrunel/yahoo-oauth)
+Yahoo_OAuth_Fantasy is a very easy to use OAuth library for Yahoo! Fantasy APIs. (Based on https://github.com/josuebrunel/yahoo-oauth)
 
 ## Installation
 
@@ -105,7 +105,7 @@ oauth = OAuth2(None, None, from_string=cred_string)
 
 if not oauth.token_is_valid():
     oauth.refresh_access_token()
-new_cred_string = oauth.get_new_data(
+new_cred_string = oauth.get_new_data()
 # Example
 response = oauth.session.get(url, params=payload)
 ```
